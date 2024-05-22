@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.4)  22 MAY 2024 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.4)  22 MAY 2024 14:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -670,4 +670,847 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \beamer@section@min@dim=\dimen272
 )
 (/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
-(/usr/local/texlive/2021/
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks33
+\ex@=\dimen273
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen274
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count309
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count310
+\leftroot@=\count311
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count312
+\DOTSCASE@=\count313
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box70
+\strutbox@=\box71
+\big@size=\dimen275
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count314
+\c@MaxMatrixCols=\count315
+\dotsspace@=\muskip17
+\c@parentequation=\count316
+\dspbrk@lvl=\count317
+\tag@help=\toks34
+\row@=\count318
+\column@=\count319
+\maxfields@=\count320
+\andhelp@=\toks35
+\eqnshift@=\dimen276
+\alignsep@=\dimen277
+\tagshift@=\dimen278
+\tagwidth@=\dimen279
+\totwidth@=\dimen280
+\lineht@=\dimen281
+\@envbody=\toks36
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks37
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks38
+\thm@bodyfont=\toks39
+\thm@headfont=\toks40
+\thm@notefont=\toks41
+\thm@headpunct=\toks42
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks43
+)
+\c@theorem=\count321
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamercolorthemedefault.st
+y)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.st
+y
+\beamer@dima=\dimen282
+\beamer@dimb=\dimen283
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerouterthemedefault.st
+y))) (./preamble.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box72
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 133.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count322
+\mult@box=\box73
+\multicol@leftmargin=\dimen284
+\c@unbalance=\count323
+\c@collectmore=\count324
+\doublecol@number=\count325
+\multicoltolerance=\count326
+\multicolpretolerance=\count327
+\full@width=\dimen285
+\page@free=\dimen286
+\premulticols=\dimen287
+\postmulticols=\dimen288
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
+\partial@page=\box74
+\last@line=\box75
+\maxbalancingoverflow=\dimen289
+\mult@rightbox=\box76
+\mult@grightbox=\box77
+\mult@gfirstbox=\box78
+\mult@firstbox=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\c@minrows=\count328
+\c@columnbadness=\count329
+\c@finalcolumnbadness=\count330
+\last@try=\dimen290
+\multicolovershoot=\dimen291
+\multicolundershoot=\dimen292
+\mult@nat@firstbox=\box117
+\colbreak@box=\box118
+\mc@col@check@num=\count331
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamerfontthemeprofessiona
+lfonts.sty) (/usr/local/texlive/2021/texmf-dist/tex/latex/roboto/roboto.sty
+Package: roboto 2019/12/11 (Bob Tennent) Supports Roboto fonts for all LaTeX en
+gines.
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks44
+\XKV@tempa@toks=\toks45
+)
+\XKV@depth=\count332
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/l/n' undefined
+(Font)              using `OT1/cmss/m/n' instead on input line 112.
+
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+\MT@toks=\toks46
+\MT@count=\count333
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen293
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count334
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip66
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+\tc@llx=\dimen294
+\tc@lly=\dimen295
+\tc@urx=\dimen296
+\tc@ury=\dimen297
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen298
+\adjbox@Height=\dimen299
+\adjbox@Depth=\dimen300
+\adjbox@Totalheight=\dimen301
+\adjbox@pwidth=\dimen302
+\adjbox@pheight=\dimen303
+\adjbox@pdepth=\dimen304
+\adjbox@ptotalheight=\dimen305
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count335
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box119
+\sift@deathcycles=\count336
+\@vwid@loff=\dimen306
+\@vwid@roff=\dimen307
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen308
+\ar@mcellbox=\box120
+\extrarowheight=\dimen309
+\NC@list=\toks47
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box121
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box122
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen310
+\lightrulewidth=\dimen311
+\cmidrulewidth=\dimen312
+\belowrulesep=\dimen313
+\belowbottomsep=\dimen314
+\aboverulesep=\dimen315
+\abovetopsep=\dimen316
+\cmidrulesep=\dimen317
+\cmidrulekern=\dimen318
+\defaultaddspace=\dimen319
+\@cmidla=\count337
+\@cmidlb=\count338
+\@aboverulesep=\dimen320
+\@belowrulesep=\dimen321
+\@thisruleclass=\count339
+\@lastruleclass=\count340
+\@thisrulewidth=\dimen322
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen323
+\TX@old@table=\dimen324
+\TX@old@col=\dimen325
+\TX@target=\dimen326
+\TX@delta=\dimen327
+\TX@cols=\count341
+\TX@ftn=\toks48
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip69
+\subfigcapskip=\skip70
+\subfigcaptopadj=\dimen328
+\subfigbottomskip=\skip71
+\subfigcapmargin=\dimen329
+\subfiglabelskip=\skip72
+\c@subfigure=\count342
+\c@lofdepth=\count343
+\c@subtable=\count344
+\c@lotdepth=\count345
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip73
+\subfig@bottom=\skip74
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hf-tikz/hf-tikz.sty
+Package: hf-tikz 2014/07/25 v0.3a A simple way to highlight formulas and formul
+a parts.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box123
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen330
+\pgf@nodesepend=\dimen331
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen332
+\pgffor@skip=\dimen333
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count346
+\pgfplotmarksize=\dimen334
+)
+\tikz@lastx=\dimen335
+\tikz@lasty=\dimen336
+\tikz@lastxsaved=\dimen337
+\tikz@lastysaved=\dimen338
+\tikz@lastmovetox=\dimen339
+\tikz@lastmovetoy=\dimen340
+\tikzleveldistance=\dimen341
+\tikzsiblingdistance=\dimen342
+\tikz@figbox=\box124
+\tikz@figbox@bg=\box125
+\tikz@tempbox=\box126
+\tikz@tempbox@bg=\box127
+\tikztreelevel=\count347
+\tikznumberofchildren=\count348
+\tikznumberofcurrentchild=\count349
+\tikz@fig@count=\count350
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count351
+\pgfmatrixcurrentcolumn=\count352
+\pgf@matrix@numberofcolumns=\count353
+)
+\tikz@expandcount=\count354
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshadings.code.tex
+File: tikzlibraryshadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryshading
+s.code.tex
+File: pgflibraryshadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count355
+\l__pdf_internal_box=\box128
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-
+01.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.
+tex)))
+\c@jumping=\count356
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/breqn/breqn.sty
+Package: breqn 2020/09/24 v0.98k Breaking equations
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/breqn/flexisym.sty
+Package: flexisym 2020/09/24 v0.98k Make math characters macros
+LaTeX Info: Redefining \textprime on input line 299.
+LaTeX Info: Redefining \not on input line 357.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/breqn/cmbase.sym
+File: cmbase.sym 2007/12/19 v0.92
+LaTeX Info: Redefining \hbar on input line 324.
+LaTeX Info: Redefining \surd on input line 326.
+LaTeX Info: Redefining \angle on input line 334.
+LaTeX Info: Redefining \neq on input line 335.
+LaTeX Info: Redefining \mapsto on input line 336.
+LaTeX Info: Redefining \cong on input line 337.
+LaTeX Info: Redefining \notin on input line 340.
+LaTeX Info: Redefining \rightleftharpoons on input line 341.
+LaTeX Info: Redefining \doteq on input line 342.
+LaTeX Info: Redefining \hookrightarrow on input line 343.
+LaTeX Info: Redefining \hookleftarrow on input line 344.
+LaTeX Info: Redefining \bowtie on input line 345.
+LaTeX Info: Redefining \models on input line 346.
+LaTeX Info: Redefining \Longrightarrow on input line 347.
+LaTeX Info: Redefining \longrightarrow on input line 348.
+LaTeX Info: Redefining \Longleftarrow on input line 349.
+LaTeX Info: Redefining \longleftarrow on input line 350.
+LaTeX Info: Redefining \longmapsto on input line 351.
+LaTeX Info: Redefining \longleftrightarrow on input line 352.
+LaTeX Info: Redefining \Longleftrightarrow on input line 353.
+LaTeX Info: Redefining \cdots on input line 357.
+LaTeX Info: Redefining \vdots on input line 360.
+LaTeX Info: Redefining \ddots on input line 365.
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/breqn/mathstyle.sty
+Package: mathstyle 2020/09/24 v0.98k Tracking mathstyle implicitly
+LaTeX Info: Redefining \displaystyle on input line 95.
+LaTeX Info: Redefining \textstyle on input line 97.
+LaTeX Info: Redefining \scriptstyle on input line 99.
+LaTeX Info: Redefining \scriptscriptstyle on input line 101.
+LaTeX Info: Redefining \genfrac on input line 149.
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count357
+\calc@Bcount=\count358
+\calc@Adimen=\dimen343
+\calc@Bdimen=\dimen344
+\calc@Askip=\skip75
+\calc@Bskip=\skip76
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count359
+\calc@Cskip=\skip77
+)
+\inf@bad=\count360
+\maxint=\count361
+\listwidth=\dimen345
+\eqnumsep=\dimen346
+\eqmargin=\dimen347
+\eqlinespacing=\skip78
+\eqlineskip=\skip79
+\eqlineskiplimit=\dimen348
+\eqbinoffset=\muskip18
+\eqdelimoffset=\muskip19
+\eqindentstep=\dimen349
+\eqstyle=\toks51
+\eqbreakdepth=\count362
+\eqinterlinepenalty=\count363
+\intereqpenalty=\count364
+\intereqskip=\skip80
+\prerelpenalty=\count365
+\prebinoppenalty=\count366
+\Dmedmuskip=\muskip20
+\Dthickmuskip=\muskip21
+\eqleftskip=\skip81
+\eqrightskip=\skip82
+\eq@vspan=\skip83
+\eq@binoffset=\muskip22
+\EQ@box=\box129
+\EQ@copy=\box130
+\EQ@numbox=\box131
+\eq@wdNum=\dimen350
+\GRP@numbox=\box132
+\grp@wdNum=\dimen351
+\eq@lines=\count367
+\eq@curline=\count368
+\eq@badness=\count369
+\EQ@vims=\count370
+\eq@dp=\dimen352
+\eq@wdL=\dimen353
+\eq@wdT=\dimen354
+\eq@wdMin=\dimen355
+\grp@wdL=\dimen356
+\grp@wdR=\dimen357
+\grp@wdT=\dimen358
+\eq@wdRmax=\dimen359
+\eq@firstht=\dimen360
+\eq@wdCond=\dimen361
+\eq@indentstep=\dimen362
+\eq@linewidth=\dimen363
+\grp@linewidth=\dimen364
+\eq@hshift=\dimen365
+\eq@given@sidespace=\dimen366
+\mathindent=\dimen367
+\eq@final@linecount=\count371
+\eq@wdR=\dimen368
+\EQ@continue=\toks52
+\lr@level=\count372
+\GRP@queue=\toks53
+\GRP@box=\box133
+\GRP@wholebox=\box134
+\darraycolsep=\skip84
+\cur@row=\count373
+\cur@col=\count374
+\conditionsep=\skip85
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count375
+\l_MT_multwidth_dim=\dimen369
+\origjot=\skip86
+\l_MT_shortvdotswithinadjustabove_dim=\dimen370
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen371
+\l_MT_above_intertext_sep=\dimen372
+\l_MT_below_intertext_sep=\dimen373
+\l_MT_above_shortintertext_sep=\dimen374
+\l_MT_below_shortintertext_sep=\dimen375
+\xmathstrut@box=\box135
+\xmathstrut@dim=\dimen376
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen377
+\ESO@tempdimb=\dimen378
+)
+\AM@pagewidth=\dimen379
+\AM@pageheight=\dimen380
+\AM@fboxrule=\dimen381
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count376
+\AM@pagebox=\box136
+\AM@global@opts=\toks54
+\AM@pagecnt=\count377
+\AM@toc@title=\toks55
+\c@AM@survey=\count378
+\AM@templatesizebox=\box137
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count379
+\lst@gtempboxa=\box138
+\lst@token=\toks56
+\lst@length=\count380
+\lst@currlwidth=\dimen382
+\lst@column=\count381
+\lst@pos=\count382
+\lst@lostspace=\dimen383
+\lst@width=\dimen384
+\lst@newlines=\count383
+\lst@lineno=\count384
+\lst@maxwidth=\dimen385
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count385
+\lst@skipnumbers=\count386
+\lst@framebox=\box139
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks57
+\verbatim@line=\toks58
+\verbatim@in@stream=\read3
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/media9/media9.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: media9 2021/03/01 v1.15 acrobat-9/X compatible media
+\g_mix_pkgresizeflag_int=\count387
+(/usr/local/texlive/2021/texmf-dist/tex/latex/media9/pdfbase.sty
+Package: pdfbase 2021/03/01 v0.46 driver independent access to low-level PDF fe
+atures
+\g_pbs_page_int=\count388
+\g_pbs_oc_int=\count389
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/ocgx2/ocgbase.sty
+Package: ocgbase 2021/01/25 v0.18 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count390
+)
+\l_mix_poster_box=\box140
+\g_mix_wd_dim=\dimen386
+\g_mix_ht_dim=\dimen387
+\g_mix_dp_dim=\dimen388
+\g_mix_rmcnt_int=\count391
+\l_mix_viewcnt_int=\count392
+\g@mix@page@int=\count393
+\g_mix_resizeflag_int=\count394
+\l_mix_lineno_int=\count395
+\l_mix_pbtn_box=\box141
+\mix@btn@dim=\dimen389
+\g_mix_mbtncnt_int=\count396
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip87
+\bibsep=\skip88
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count397
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/har2nat/har2nat.sty
+Package: har2nat 2005/12/01 1.0 Harvard to natbib
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/breakcites/breakcites.sty)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+LaTeX Font Info:    Trying to load font information for OT1+Roboto-LF on input 
+line 34.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/roboto/OT1Roboto-LF.fd
+File: OT1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for OT1/Roboto-LF.
+
+)
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/l/n' aliased to
+(Font)              `OT1/Roboto-LF/light/n' on input line 34.
+LaTeX Font Info:    Font shape `OT1/Roboto-LF/light/n' will be
+(Font)              scaled to size 10.95pt on input line 34.
+
+No file 01-Basics.aux.
+\openout1 = `01-Basics.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(15.0pt, 334.19536pt, 15.0pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=334.19536pt
+* \textheight=244.6939pt
+* \oddsidemargin=-57.26999pt
+* \evensidemargin=-57.26999pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count398
+\scratchdimen=\dimen390
+\scratchbox=\box142
+\nofMPsegments=\count399
+\nofMParguments=\count400
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count401
+\MPscratchDim=\dimen391
+\MPnumerator=\count402
+\makeMPintoPDFobject=\count403
+\everyMPtoPDFconversion=\toks60
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package hyperref Info: Link coloring ON on input line 34.
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count404
+)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+\@outlinefile=\write5
+\openout5 = `01-Basics.out'.
+
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-basic-dicti
+onary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-bibliograph
+y-dictionary-English.dict
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-environment
+-dictionary-English.dict
+Dictionary: translator-environment-dictionary, Language: English 
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-months-dict
+ionary-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-numbers-dic
+tionary-English.dict
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/translator/translator-theorem-dic
+tionary-English.dict
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+\c@mv@tabular=\count405
+\c@mv@boldtabular=\count406
+LaTeX Info: Redefining \microtypecontext on input line 34.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabl
