@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Two Contemporary Examples}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Facebook and Mental Health}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{ChatBot Rollout}{29}{0}{1}
+\beamer@sectionintoc {2}{Concluding remarks}{43}{0}{2}

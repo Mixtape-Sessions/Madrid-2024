@@ -1,0 +1,520 @@
+\documentclass{beamer}
+
+\input{preamble.tex}
+\usepackage{breqn} % Breaks lines
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\usepackage{pdfpages} % \includepdf
+
+\usepackage{listings} % R code
+\usepackage{verbatim} % verbatim
+
+% Video stuff
+\usepackage{media9}
+
+% packages for bibs and cites
+\usepackage{natbib}
+\usepackage{har2nat}
+\newcommand{\possessivecite}[1]{\citeauthor{#1}'s \citeyearpar{#1}}
+\usepackage{breakcites}
+\usepackage{alltt}
+
+% Setup math operators
+\DeclareMathOperator{\E}{E} \DeclareMathOperator{\tr}{tr} \DeclareMathOperator{\se}{se} \DeclareMathOperator{\I}{I} \DeclareMathOperator{\sign}{sign} \DeclareMathOperator{\supp}{supp} \DeclareMathOperator{\plim}{plim}
+\DeclareMathOperator*{\dlim}{\mathnormal{d}\mkern2mu-lim}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+   \def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\newcommand*\colvec[1]{\begin{pmatrix}#1\end{pmatrix}}
+
+\newcommand{\myurlshort}[2]{\href{#1}{\textcolor{gray}{\textsf{#2}}}}
+
+
+\begin{document}
+
+\imageframe{./lecture_includes/mixtape_did_cover.png}
+
+
+% ---- Content ----
+
+\section{Two Contemporary Examples}
+
+\subsection{Facebook and Mental Health}
+
+\begin{frame}{Bringing them together}
+
+\begin{itemize}
+
+\item Now we will look at a couple of studies using differential timing to understand both the studies (as a nice break), but also how they approached what we covered
+	\begin{enumerate}
+	\item Braghieri, Levy and Makarin (2022), ``Social Media and Mental Health'', \emph{American Economic Review}, 112(11): 3660-3693
+	\item Brynjolfsson, Li and Raymond (2023), ``Generative AI at Work'', \emph{NBER Working Paper 31161}
+	\end{enumerate}
+\item I also love these papers because what I hope to do is suggest why TWFE seems problematic in the first, but weirdly, not the second
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_quote}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Mental health and Social Media}
+
+\begin{itemize}
+\item Unclear what he means; he may mean there is no experimental evidence
+\item Very difficult to imagine a randomized experiment being realistic or ethical 
+\item Once the claim out there is that it is harmful, Institutional Review Boards likely wouldn't approve it
+\item Herein is a reason we so often focus on quasi-experimental approaches -- for many policy questions, it's the only way 
+
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Reviewing the contribution}
+
+\begin{itemize}
+
+\item Premiere journals are looking for important research questions, high quality data and appropriate research designs (if causal)
+\item My observations are about the paper's contribution
+	\begin{enumerate}
+	\item Social media platforms impact on youth mental health is a major policy question and difficult to answer (see Zuckerberg testifying before Congress about it)
+	\item Meticulous data collection with ingenious linkages (but which are increasingly common)
+	\item Quasi-experimental research design using differential timing difference-in-differences
+	\item Data visualization from event studies (appropriately specified) are compelling
+	\end{enumerate}
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Overview}
+
+\begin{itemize}
+\item Facebook (``theFacebook'') initially targeted different American universities from 2004 to 2006 \emph{at different points in time}
+\item They found an online data source that allowed them to pin point precisely when a university was ``treated'' with theFacebook
+\item They then linked that data with a longrunning health survey of college students (both before and after) in a very clever way
+\item Estimated the effect of a new social media platform's presence at a university on student revealed mental health problems
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Five elements of a strong DiD}
+
+
+\begin{enumerate}
+
+\item \textbf{Bite}: \textcolor{red}{Nothing}. They cannot really show much here.  No data on Facebook usage.  They had to rely on anecdote and Facebook as a ``first mover'', but there had been Friendster and MySpace so this does weaken the paper maybe. More intent-to-treat
+\item \textbf{Main Results}: Very strong evidence, mostly expressed using rich survey data and questions transformed into z-scores (standard deviations)
+\item \textbf{Falsifications}: \textcolor{red}{None}. Authors do not perform falsifications. Remember Miller, Johnson and Wherry looking at Medicaid's effect on Medicare eligible population?  There isn't anything like that here.
+\item \textbf{Event studies}: Extremely compelling evidence and robustness across a half dozen different models
+\item \textbf{Mechanism}: \textcolor{red}{Speculative but let's see what you think}
+
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}{TWFE}
+
+\begin{equation}
+Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma + X_c \times \psi + \varepsilon_{icgt}
+\end{equation}
+
+\bigskip
+
+\begin{itemize}
+\item Authors in 2023 \emph{American Economic Review} made a TWFE specification their main model. 
+\item Why given they will also estimate the robust methods?  
+\item One of them simply said they did not believe that the diff-in-diff literacy was high enough that they could approach it otherwise
+\item Does not mean that this is true now, but it's something to remember -- know your audience, anticipate their expectations and write accordingly (we can ask Dan and Mark about this)
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Data on Facebook}
+
+\begin{itemize}
+
+\item When does Facebook appear at a school?  
+	\begin{itemize}
+	\item Facebook only publishes a fraction of that information
+	\item They came up with a workaround
+	\end{itemize}
+\item The Wayback Machine has been taking almost daily photographs of every website since the Internet's beginning -- including the frontpage of ``TheFacebook''
+\item Guess what was on the front page of TheFacebook \dots
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/wayback1}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/wayback2}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/wayback3}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/wayback4}
+\end{center}
+\end{frame}
+
+\begin{frame}{Timing Dates}
+
+\begin{itemize}
+\item They went through three years of daily screenshots on Wayback machine to find when a school appeared on the front page
+\item The first time Agnes Scott, or Covenant, appears on the front page, the authors mark that as the date when the school got Facebook
+\item But now they need information on mental health outcomes
+\item They find it with an old long running repeated cross section survey of college students
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{NCHA survey by ACHA}
+
+\begin{quote}
+Our second main data source consists of more than 430,000 responses to the NCHA survey, a survey administered to college students on a semi-annual basis by the American College Health Association (ACHA). The NCHA survey was developed in 1998 by a team of college health professionals with the purpose of obtaining information from college students about their mental and physical health. Specifically, the NCHA survey inquires about demographics, physical health, \textbf{mental health}, alcohol and drug use, sexual behaviors, and perceptions of these behaviors among one’s peers.
+\end{quote}
+
+\end{frame}
+
+\begin{frame}{No evidence of bite}
+
+\begin{quote}
+The NCHA survey does not include any questions on social media use; therefore, it is not possible for us to determine whether a particular survey respondent had a Facebook account.
+\end{quote}
+
+\bigskip
+
+This is probably the problem in any study in which your treatment is more or less the first of its kind -- most likely the standard surveys have not yet incorporated the questions into their surveys
+
+\end{frame}
+
+\begin{frame}{Linking Facebook data with NCHA data}
+
+\begin{quote}
+In order to protect the privacy of the institutions that participate in the NCHA survey while still allowing us to carry out the analysis, the ACHA kindly agreed to provide us with a customized dataset that includes a variable indicating the semester in which Facebook was rolled out at each college. Specifically, the ACHA adopted the following procedure: (i) merge our dataset containing the Facebook introduction dates to the NCHA dataset; (ii) add a variable listing the semester in which Facebook was rolled out at each college;15 (iii) strip away any information that could allow us to identify colleges (including the specific date in which Facebook was introduced at each college).
+\end{quote}
+
+\end{frame}
+
+\begin{frame}{Basic facts about early and late adopters}
+
+\begin{itemize}
+\item Colleges in earlier Facebook expansion groups are more selective in terms of test scores, larger, more likely to be on the East Coast, and have more residential undergraduate programs than colleges in later Facebook expansion groups. 
+
+\item Colleges in earlier Facebook expansion groups enroll students from relatively more advantaged economic backgrounds. 
+
+\item Students in colleges that received Facebook relatively earlier have worse baseline mental health outcomes than students attending colleges in later Facebook expansion groups. 
+
+%The baseline differences across Facebook expansion groups may lead one to wonder about the plausibility of the parallel trends assumption in this setting; we address concerns related to parallel trends in Section III.
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Measurement}
+
+\begin{itemize}
+\item The survey data is very rich with a lot of questions about mental health with different scales
+\item They create their own combinations of these questions into aggregate indices -- ``index of poor mental health'' where higher numbers mean worse mental health
+\item Each outcome survey question is normalized into what is called a ``z-score'' which is interpreted as a fraction of a standard deviation
+\item Estimates are ATT parameters -- average effect of Facebook on students at schools that got Facebook
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_1}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_2}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_3}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_4}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_5}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_6}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/facebook_7}
+\end{center}
+\end{frame}
+
+\begin{frame}{Questions and Comments}
+
+\begin{itemize}
+\item Mark Zuckerberg quote: ``the existing body of scientific work has not shown a causal link between using social media and young people having worse mental health outcomes'' -- What is your reaction to his claim?
+\item What is your reaction to this study's evidence?  
+\item Which parts of this study do you think is more memorable and more convincing and why?
+\item How might you replicate this study yourself?
+
+\end{itemize}
+
+\end{frame}
+
+
+\subsection{ChatBot Rollout}
+
+\begin{frame}{Working Paper on ChatBot}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/brynn}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Chatbots and Workers}
+
+\begin{itemize}
+
+\item An unnamed firm released gradually a generative AI-based conversational assistant chatbot to its  5,179 customer support agents 
+\item These chatbots provided assistance in handling complaints
+\item Very stressful job as the only time customers reached out was when they were very upset
+\item It isn't a randomized experiment so they're going to estimate the effect of the adoption of the chatbot using difference-in-differences
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Outcomes and Pictures}
+
+\begin{itemize}
+
+\item Main focus is on various measures of customer support agents handling of calls, which is the proxy for their productivity
+\item But they also focus on high and low skill workers (heterogeneity like before)
+\item Authors are going to present evidence almost entirely using event study graphs
+\item They also present regression tables, but the event study graphs are very powerful
+
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Example of ChatBot}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/brynn1}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Rollout}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/brynn2}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Resolutions of Customer Problems}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/brynn3}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Additional Outcomes}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/brynn4}
+\end{center}
+\end{frame}
+
+\begin{frame}{Heterogeneity by Skill}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/brynn5}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Heterogeneity by Skill}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/brynn6}
+\end{center}
+\end{frame}
+
+\begin{frame}{Heterogeneity by Worker Tenure}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/brynn7}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}{Sentiment}
+\begin{center}
+\includegraphics[scale=0.35]{./lecture_includes/brynn8}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Sentiment}
+\begin{center}
+\includegraphics[scale=0.3]{./lecture_includes/brynn11}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Manager Assistance}
+\begin{center}
+\includegraphics[scale=0.25]{./lecture_includes/brynn9}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Outcomes}
+
+\begin{itemize}
+
+\item Across many dimensions, worker productivity rose
+\item And the productivity increases were higher for the least skilled workers -- just like we had seen in the experiment
+\item They suggest that generative AI ``reallocated experience'' to the least experienced workers making them essentially appear as though they had been their awhile
+\item Findings suggest that it improves customer sentiment, reduces requests for managerial intervention, and improves employee retention
+\item Still unclear how generalizeable this is, and what impact we should see on overall aggregate employment as this was AI assisted, not AI alone
+
+\end{itemize}
+
+\end{frame}
+
+
+\section{Concluding remarks}
+
+
+
+\begin{frame}{DiD vs ATT}
+
+\begin{itemize}
+
+\item We learned that difference-in-differences was just four averages and three subtractions
+\item But it was also a specific regression specification
+\item We saw that difference-in-differences could be used to estimate average treatment effects 
+\item But the DiD equation is distinct from the ATT parameter we care about
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Parallel Trends}
+
+\begin{itemize}
+
+\item DiD only was equal to the ATT if the parallel trends assumption was true
+\item But it's not verifiable so it's a difficult assumption
+\item Parallel trends is not something a statistical model fixes -- it's something a control group fixes
+\item Some comparison groups will satisfy parallel trends, but some won't
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Evidence for parallel trends}
+
+\begin{enumerate}
+
+\item Event study graphics -- plot coefficients and confidence intervals to check if pre-trends are zero so that post-treatment coefficients are compelling evidence for causal effects
+\item Falsifications -- if possible, rule out competing hypotheses using falsifications (e.g., 65+ year olds can't be on Medicaid as they're already on Medicare)
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Roadmap}
+
+\begin{enumerate}
+\item Show bite -- first order effects
+\item Main results -- What's your study about?
+\item Event study graphs -- This will be your main results and your evidence of parallel trends keeping in mind pre-trends and parallel trends are technically distinct
+\item Falsifications -- If you can find falsifications, use them
+\item Mechanisms -- can you find any explanation?
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Synthetic control}
+
+\begin{itemize}
+
+\item But what if parallel trends really isn't realistic -- what then?
+\item Then you may need to create your own control group that follows the same approximately trajectory as your treatment group pre-treatment
+\item A method by Abadie and Gardazebal (2003) and follow up papers worked out a method for this called synthetic control
+\item We will review that next
+\end{itemize}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
