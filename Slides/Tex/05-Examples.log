@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.4)  24 MAY 2024 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.4)  24 MAY 2024 16:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1548,16 +1548,20 @@ LaTeX Font Info:    Font shape `OT1/Roboto-LF/l/n' aliased to
 (Font)              `OT1/Roboto-LF/light/n' on input line 37.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/light/n' will be
 (Font)              scaled to size 6.0pt on input line 37.
-<./lecture_includes/mixtape_did_cover.png, id=29, 2168.1pt x 1084.05pt>
-File: ./lecture_includes/mixtape_did_cover.png Graphic file (type png)
-<use ./lecture_includes/mixtape_did_cover.png>
-Package pdftex.def Info: ./lecture_includes/mixtape_did_cover.png  used on inpu
-t line 39.
-(pdftex.def)             Requested size: 364.17215pt x 182.08607pt.
- [1
 
- <./lecture_includes/mixtape_did_cover.png>]
-(./05-Examples.toc)
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./lecture_includes/slide_ban
+ner.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> all
+owed
+<./lecture_includes/slide_banner.pdf, id=29, 602.25pt x 451.6875pt>
+File: ./lecture_includes/slide_banner.pdf Graphic file (type pdf)
+<use ./lecture_includes/slide_banner.pdf>
+Package pdftex.def Info: ./lecture_includes/slide_banner.pdf  used on input lin
+e 39.
+(pdftex.def)             Requested size: 364.21074pt x 273.15805pt.
+[1
+
+ <./lecture_includes/slide_banner.pdf>] (./05-Examples.toc)
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/l/n' aliased to
 (Font)              `OT1/Roboto-LF/light/n' on input line 44.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/light/n' will be
@@ -1591,7 +1595,7 @@ LaTeX Font Info:    Font shape `OT1/Roboto-LF/light/it' will be
  [3
 
 ]
-<./lecture_includes/facebook_quote.png, id=60, 713.16437pt x 291.0875pt>
+<./lecture_includes/facebook_quote.png, id=68, 713.16437pt x 291.0875pt>
 File: ./lecture_includes/facebook_quote.png Graphic file (type png)
 <use ./lecture_includes/facebook_quote.png>
 Package pdftex.def Info: ./lecture_includes/facebook_quote.png  used on input l
@@ -1623,7 +1627,7 @@ LaTeX Font Info:    Font shape `OT1/Roboto-LF/bold/n' will be
 ] [10
 
 ]
-<./lecture_includes/wayback1.png, id=109, 1149.29375pt x 872.76062pt>
+<./lecture_includes/wayback1.png, id=118, 1149.29375pt x 872.76062pt>
 File: ./lecture_includes/wayback1.png Graphic file (type png)
 <use ./lecture_includes/wayback1.png>
 Package pdftex.def Info: ./lecture_includes/wayback1.png  used on input line 17
@@ -1634,7 +1638,7 @@ Package pdftex.def Info: ./lecture_includes/wayback1.png  used on input line 17
  <./lecture_includes/wayback1.png>] [12
 
 ]
-<./lecture_includes/wayback2.png, id=123, 1113.15875pt x 606.76688pt>
+<./lecture_includes/wayback2.png, id=132, 1113.15875pt x 606.76688pt>
 File: ./lecture_includes/wayback2.png Graphic file (type png)
 <use ./lecture_includes/wayback2.png>
 Package pdftex.def Info: ./lecture_includes/wayback2.png  used on input line 19
@@ -1648,7 +1652,7 @@ Overfull \hbox (55.41605pt too wide) in paragraph at lines 197--197
 [13
 
  <./lecture_includes/wayback2.png>]
-<./lecture_includes/wayback3.png, id=132, 1156.32pt x 749.29938pt>
+<./lecture_includes/wayback3.png, id=141, 1156.32pt x 749.29938pt>
 File: ./lecture_includes/wayback3.png Graphic file (type png)
 <use ./lecture_includes/wayback3.png>
 Package pdftex.def Info: ./lecture_includes/wayback3.png  used on input line 20
@@ -1657,7 +1661,7 @@ Package pdftex.def Info: ./lecture_includes/wayback3.png  used on input line 20
  [14
 
  <./lecture_includes/wayback3.png>]
-<./lecture_includes/wayback4.png, id=140, 1119.18124pt x 903.375pt>
+<./lecture_includes/wayback4.png, id=149, 1119.18124pt x 903.375pt>
 File: ./lecture_includes/wayback4.png Graphic file (type png)
 <use ./lecture_includes/wayback4.png>
 Package pdftex.def Info: ./lecture_includes/wayback4.png  used on input line 20
@@ -1684,7 +1688,7 @@ LaTeX Font Info:    Font shape `OT1/Roboto-LF/bold/it' will be
 ] [21
 
 ]
-<./lecture_includes/facebook_1.png, id=187, 644.4075pt x 557.58313pt>
+<./lecture_includes/facebook_1.png, id=196, 644.4075pt x 557.58313pt>
 File: ./lecture_includes/facebook_1.png Graphic file (type png)
 <use ./lecture_includes/facebook_1.png>
 Package pdftex.def Info: ./lecture_includes/facebook_1.png  used on input line 
@@ -1693,7 +1697,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_1.png  used on input line
  [22
 
  <./lecture_includes/facebook_1.png>]
-<./lecture_includes/facebook_2.png, id=195, 749.80125pt x 547.54562pt>
+<./lecture_includes/facebook_2.png, id=204, 749.80125pt x 547.54562pt>
 File: ./lecture_includes/facebook_2.png Graphic file (type png)
 <use ./lecture_includes/facebook_2.png>
 Package pdftex.def Info: ./lecture_includes/facebook_2.png  used on input line 
@@ -1702,7 +1706,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_2.png  used on input line
  [23
 
  <./lecture_includes/facebook_2.png>]
-<./lecture_includes/facebook_3.png, id=203, 717.68124pt x 445.16313pt>
+<./lecture_includes/facebook_3.png, id=212, 717.68124pt x 445.16313pt>
 File: ./lecture_includes/facebook_3.png Graphic file (type png)
 <use ./lecture_includes/facebook_3.png>
 Package pdftex.def Info: ./lecture_includes/facebook_3.png  used on input line 
@@ -1712,7 +1716,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_3.png  used on input line
 [24
 
  <./lecture_includes/facebook_3.png>]
-<./lecture_includes/facebook_4.png, id=211, 789.95125pt x 619.31375pt>
+<./lecture_includes/facebook_4.png, id=220, 789.95125pt x 619.31375pt>
 File: ./lecture_includes/facebook_4.png Graphic file (type png)
 <use ./lecture_includes/facebook_4.png>
 Package pdftex.def Info: ./lecture_includes/facebook_4.png  used on input line 
@@ -1721,7 +1725,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_4.png  used on input line
  [25
 
  <./lecture_includes/facebook_4.png>]
-<./lecture_includes/facebook_5.png, id=220, 747.29187pt x 616.80438pt>
+<./lecture_includes/facebook_5.png, id=229, 747.29187pt x 616.80438pt>
 File: ./lecture_includes/facebook_5.png Graphic file (type png)
 <use ./lecture_includes/facebook_5.png>
 Package pdftex.def Info: ./lecture_includes/facebook_5.png  used on input line 
@@ -1730,7 +1734,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_5.png  used on input line
  [26
 
  <./lecture_includes/facebook_5.png>]
-<./lecture_includes/facebook_6.png, id=228, 754.31813pt x 571.63562pt>
+<./lecture_includes/facebook_6.png, id=237, 754.31813pt x 571.63562pt>
 File: ./lecture_includes/facebook_6.png Graphic file (type png)
 <use ./lecture_includes/facebook_6.png>
 Package pdftex.def Info: ./lecture_includes/facebook_6.png  used on input line 
@@ -1739,7 +1743,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_6.png  used on input line
  [27
 
  <./lecture_includes/facebook_6.png>]
-<./lecture_includes/facebook_7.png, id=236, 744.28062pt x 553.56813pt>
+<./lecture_includes/facebook_7.png, id=245, 744.28062pt x 553.56813pt>
 File: ./lecture_includes/facebook_7.png Graphic file (type png)
 <use ./lecture_includes/facebook_7.png>
 Package pdftex.def Info: ./lecture_includes/facebook_7.png  used on input line 
@@ -1750,7 +1754,7 @@ Package pdftex.def Info: ./lecture_includes/facebook_7.png  used on input line
  <./lecture_includes/facebook_7.png>] [29
 
 ]
-<./lecture_includes/brynn.png, id=250, 801.49437pt x 507.39563pt>
+<./lecture_includes/brynn.png, id=259, 801.49437pt x 507.39563pt>
 File: ./lecture_includes/brynn.png Graphic file (type png)
 <use ./lecture_includes/brynn.png>
 Package pdftex.def Info: ./lecture_includes/brynn.png  used on input line 338.
@@ -1762,7 +1766,7 @@ Package pdftex.def Info: ./lecture_includes/brynn.png  used on input line 338.
 ] [32
 
 ]
-<./lecture_includes/brynn1.png, id=270, 920.94063pt x 825.0825pt>
+<./lecture_includes/brynn1.png, id=279, 920.94063pt x 825.0825pt>
 File: ./lecture_includes/brynn1.png Graphic file (type png)
 <use ./lecture_includes/brynn1.png>
 Package pdftex.def Info: ./lecture_includes/brynn1.png  used on input line 375.
@@ -1775,7 +1779,7 @@ Overfull \vbox (58.9797pt too high) detected at line 375
 [33
 
  <./lecture_includes/brynn1.png>]
-<./lecture_includes/brynn2.png, id=278, 976.64874pt x 889.3225pt>
+<./lecture_includes/brynn2.png, id=287, 976.64874pt x 889.3225pt>
 File: ./lecture_includes/brynn2.png Graphic file (type png)
 <use ./lecture_includes/brynn2.png>
 Package pdftex.def Info: ./lecture_includes/brynn2.png  used on input line 382.
@@ -1793,13 +1797,13 @@ Overfull \vbox (96.42412pt too high) detected at line 382
 [34
 
  <./lecture_includes/brynn2.png>]
-<./lecture_includes/genai_did.png, id=286, 728.22063pt x 1034.86626pt>
+<./lecture_includes/genai_did.png, id=295, 728.22063pt x 1034.86626pt>
 File: ./lecture_includes/genai_did.png Graphic file (type png)
 <use ./lecture_includes/genai_did.png>
 Package pdftex.def Info: ./lecture_includes/genai_did.png  used on input line 3
 97.
 (pdftex.def)             Requested size: 153.99228pt x 218.82845pt.
-<./lecture_includes/brynn3.png, id=287, 787.94376pt x 920.94063pt>
+<./lecture_includes/brynn3.png, id=296, 787.94376pt x 920.94063pt>
 File: ./lecture_includes/brynn3.png Graphic file (type png)
 <use ./lecture_includes/brynn3.png>
 Package pdftex.def Info: ./lecture_includes/brynn3.png  used on input line 397.
@@ -1816,7 +1820,7 @@ Overfull \hbox (11.25049pt too wide) in paragraph at lines 397--397
 [36
 
 ]
-<./lecture_includes/brynn4.png, id=302, 782.925pt x 738.25812pt>
+<./lecture_includes/brynn4.png, id=312, 782.925pt x 738.25812pt>
 File: ./lecture_includes/brynn4.png Graphic file (type png)
 <use ./lecture_includes/brynn4.png>
 Package pdftex.def Info: ./lecture_includes/brynn4.png  used on input line 417.
@@ -1829,7 +1833,7 @@ Overfull \vbox (28.59071pt too high) detected at line 417
 [37
 
  <./lecture_includes/brynn4.png>]
-<./lecture_includes/brynn5.png, id=312, 765.86125pt x 826.58812pt>
+<./lecture_includes/brynn5.png, id=321, 765.86125pt x 826.58812pt>
 File: ./lecture_includes/brynn5.png Graphic file (type png)
 <use ./lecture_includes/brynn5.png>
 Package pdftex.def Info: ./lecture_includes/brynn5.png  used on input line 423.
@@ -1838,7 +1842,7 @@ Package pdftex.def Info: ./lecture_includes/brynn5.png  used on input line 423.
  [38
 
  <./lecture_includes/brynn5.png>]
-<./lecture_includes/brynn6.png, id=320, 778.91pt x 811.53188pt>
+<./lecture_includes/brynn6.png, id=329, 778.91pt x 811.53188pt>
 File: ./lecture_includes/brynn6.png Graphic file (type png)
 <use ./lecture_includes/brynn6.png>
 Package pdftex.def Info: ./lecture_includes/brynn6.png  used on input line 430.
@@ -1848,7 +1852,7 @@ Package pdftex.def Info: ./lecture_includes/brynn6.png  used on input line 430.
 [39
 
  <./lecture_includes/brynn6.png>]
-<./lecture_includes/brynn7.png, id=328, 771.88374pt x 767.86874pt>
+<./lecture_includes/brynn7.png, id=337, 771.88374pt x 767.86874pt>
 File: ./lecture_includes/brynn7.png Graphic file (type png)
 <use ./lecture_includes/brynn7.png>
 Package pdftex.def Info: ./lecture_includes/brynn7.png  used on input line 436.
@@ -1861,7 +1865,7 @@ Overfull \vbox (38.95459pt too high) detected at line 436
 [40
 
  <./lecture_includes/brynn7.png>]
-<./lecture_includes/brynn8.png, id=336, 774.895pt x 384.43625pt>
+<./lecture_includes/brynn8.png, id=345, 774.895pt x 384.43625pt>
 File: ./lecture_includes/brynn8.png Graphic file (type png)
 <use ./lecture_includes/brynn8.png>
 Package pdftex.def Info: ./lecture_includes/brynn8.png  used on input line 444.
@@ -1870,7 +1874,7 @@ Package pdftex.def Info: ./lecture_includes/brynn8.png  used on input line 444.
  [41
 
  <./lecture_includes/brynn8.png>]
-<./lecture_includes/brynn11.png, id=344, 613.29124pt x 761.34438pt>
+<./lecture_includes/brynn11.png, id=353, 613.29124pt x 761.34438pt>
 File: ./lecture_includes/brynn11.png Graphic file (type png)
 <use ./lecture_includes/brynn11.png>
 Package pdftex.def Info: ./lecture_includes/brynn11.png  used on input line 451
@@ -1880,7 +1884,7 @@ Package pdftex.def Info: ./lecture_includes/brynn11.png  used on input line 451
 [42
 
  <./lecture_includes/brynn11.png>]
-<./lecture_includes/brynn9.png, id=352, 818.55812pt x 822.57312pt>
+<./lecture_includes/brynn9.png, id=361, 818.55812pt x 822.57312pt>
 File: ./lecture_includes/brynn9.png Graphic file (type png)
 <use ./lecture_includes/brynn9.png>
 Package pdftex.def Info: ./lecture_includes/brynn9.png  used on input line 458.
@@ -1897,7 +1901,7 @@ File: ./lecture_includes/facebook_3.png Graphic file (type png)
 Package pdftex.def Info: ./lecture_includes/facebook_3.png  used on input line 
 501.
 (pdftex.def)             Requested size: 153.99228pt x 95.518pt.
-<./lecture_includes/genai_alldid.png, id=367, 800.9925pt x 511.9125pt>
+<./lecture_includes/genai_alldid.png, id=376, 800.9925pt x 511.9125pt>
 File: ./lecture_includes/genai_alldid.png Graphic file (type png)
 <use ./lecture_includes/genai_alldid.png>
 Package pdftex.def Info: ./lecture_includes/genai_alldid.png  used on input lin
@@ -1962,12 +1966,12 @@ Package rerunfilecheck Info: File `05-Examples.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  33170 strings out of 478994
- 625437 string characters out of 5858185
- 945352 words of memory out of 5000000
+ 625431 string characters out of 5858185
+ 945355 words of memory out of 5000000
  49648 multiletter control sequences out of 15000+600000
  433254 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,16n,132p,707b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 131i,16n,132p,707b,688s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/roboto/rbto_h6xohf.enc}{/
 usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/roboto/rbto_schjax.enc}</usr/
 local/texlive/2021/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/l
@@ -1983,10 +1987,10 @@ r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
 ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
 cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loca
 l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on 05-Examples.pdf (59 pages, 4858144 bytes).
+Output written on 05-Examples.pdf (59 pages, 7178316 bytes).
 PDF statistics:
- 545 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
+ 554 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
  123 named destinations out of 1000 (max. 500000)
  32973 words of extra memory for PDF output out of 35830 (max. 10000000)
 

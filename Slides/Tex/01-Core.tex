@@ -315,17 +315,16 @@ Imputation estimators
 \subsection{Potential outcomes}
 
 
-\begin{frame}{Traditional econometric steps to any research project}
+\begin{frame}{Orley Ashenfelter}
 
-\begin{enumerate}
-\item Convert research question into causal parameter
-\item Deduce beliefs needed to estimate that causal parameter with data
-\item Create a calculator that will use data and estimate the causal parameter
-\end{enumerate}
+\begin{itemize}
+\item Orley Ashenfelter is the one who ``popularized'' difference-in-differences in economics in two papers -- 1978 article and a 1985 article with David Card -- both studying job training programs
+\item After graduating from Princeton, he took a job in Washington DC to work for the government
+\item Got his hands on large micro data and was analyzing complex fixed effects regression models of job training program participation on wages
+\item But explaining regression to normal people is, as you know, hard so he went about it a different way
+\end{itemize}
 
-\bigskip
-
-But many skip (1) and maybe even (2) and instead simply ``run regressions'' and cross our fingers that that coefficient is causal, but is it? And why is it?  And what is it? 
+\url{https://youtu.be/WnB3EJ8K7lg?si=BpU4Xv5p71vwHPvP&t=120}
 
 \end{frame}
 
@@ -335,12 +334,18 @@ $$Y_{ist} = \alpha_0 + \alpha_1 Treat_{is} + \alpha_2 Post_{t} + \textcolor{blue
 
 \bigskip
 
+\begin{itemize}
+\item Orley notes that the OLS estimator of $\delta$ actually calculates ``four averages and three subtractions'' calculation are numerically identical 
+\end{itemize}
+
+\bigskip
+
 $$\widehat{\textcolor{blue}{\delta}} = \bigg ( \overline{y}_k^{post(k)} - \overline{y}_k^{pre(k)} \bigg ) - \bigg ( \overline{y}_U^{post(k)} - \overline{y}_U^{pre(k)} \bigg ) $$
 
 \begin{itemize}
-\item Orley claims that the OLS estimator of $\delta$ and the ``four averages and three subtractions'' calculation are numerically identical \\ \url{https://youtu.be/WnB3EJ8K7lg?t=126}
 \item Review these two calculations using \texttt{equivalence.do} in Stata to illustrate the point
 \end{itemize}
+
 
 \end{frame}
 
@@ -349,7 +354,8 @@ $$\widehat{\textcolor{blue}{\delta}} = \bigg ( \overline{y}_k^{post(k)} - \overl
 \begin{itemize}
 \item We want to know when does the DiD equation identify a causal parameter and which one (there are several)?
 \item We need causality concepts that can be linked to DiD if we are to answer this question
-\item Potential outcomes notation is the main language of modern causal inference and is rooted in the early experimental design writers like Ronald Fisher and Jerzey Neyman, as well as modern statisticians like Don Rubin
+\item Potential outcomes notation is model-free explicit causal notation 
+\item Rooted in the experimental design tradition and linked to statisticians Ronald Fisher, Jerzy Neyman and Don Rubin
 \end{itemize}
 
 \end{frame}
@@ -525,13 +531,13 @@ Before we move into regression, let's go through a simple exercise to really pin
 \end{frame}
 
 
-\begin{frame}{Three main DiD assumptions}
+\begin{frame}{Three DiD assumptions}
 
+When it is the simple 2x2, there are three assumptions
 \begin{itemize}
-\item Parallel trends is the most common one and most well known
-\item But parallel trends is nested within a bundle of assumptions, and all of them are need for traditional difference-in-differences
-\item Other two lesser known assumptions are "No anticipation" (or NA) and Stable Unit Treatment Value Assumption (SUTVA)
-
+\item No Anticipation -- the ``pre'' or baseline is untreated (i.e., $Y_{t-1} = Y^0_{t-1}$ for treated units)
+\item SUTVA -- When the treatment group is treated, it does not cause the comparison group to become treated
+\item Parallel trends -- evolution of mean $Y^0$ is the same for the treatment and comparison groups
 \end{itemize}
 
 \end{frame}
