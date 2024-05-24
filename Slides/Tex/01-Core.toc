@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Welcome to CodeChella}{2}{0}{1}
+\beamer@sectionintoc {2}{Diff-in-Diff Core}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Origins of diff-in-diff}{12}{0}{2}
+\beamer@subsectionintoc {2}{2}{Potential outcomes}{22}{0}{2}
+\beamer@subsectionintoc {2}{3}{Identification, Estimation and Inference}{31}{0}{2}
+\beamer@sectionintoc {3}{Parallel Trends Violations}{58}{0}{3}
+\beamer@subsectionintoc {3}{1}{Results versus Evidence}{59}{0}{3}
+\beamer@subsectionintoc {3}{2}{Compositional Changes and Cross Sections}{62}{0}{3}
+\beamer@subsectionintoc {3}{3}{Event Studies}{67}{0}{3}
+\beamer@subsectionintoc {3}{4}{Triple differences}{91}{0}{3}
+\beamer@subsectionintoc {3}{5}{Falsifications}{103}{0}{3}
