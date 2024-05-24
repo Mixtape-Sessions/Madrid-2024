@@ -137,7 +137,7 @@
 
 
 
-\begin{frame}{TWFE}
+\begin{frame}{Main Specification: TWFE}
 
 \begin{equation}
 Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma + X_c \times \psi + \varepsilon_{icgt}
@@ -146,10 +146,11 @@ Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma 
 \bigskip
 
 \begin{itemize}
-\item Authors in 2023 \emph{American Economic Review} made a TWFE specification their main model. 
+\item Authors in 2022 \emph{American Economic Review} made a TWFE specification their main model. 
 \item Why given they will also estimate the robust methods?  
-\item One of them simply said they did not believe that the diff-in-diff literacy was high enough that they could approach it otherwise
-\item Does not mean that this is true now, but it's something to remember -- know your audience, anticipate their expectations and write accordingly (we can ask Dan and Mark about this)
+\item One of them told me that when they submitted, DiD literacy was much lower than it is now, and they could not take for granted people would know this material -- so they present the new work as ``robustness''
+\item Does not mean that this is true now, but it's something to remember -- know your audience, anticipate their expectations and write accordingly 
+\item Dan and Mark, what's your thoughts as editors about this?
 \end{itemize}
 
 \end{frame}
@@ -165,7 +166,7 @@ Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma 
 	\item They came up with a workaround
 	\end{itemize}
 \item The Wayback Machine has been taking almost daily photographs of every website since the Internet's beginning -- including the frontpage of ``TheFacebook''
-\item Guess what was on the front page of TheFacebook \dots
+\item This is a very useful website for you to know about -- we also used it in a recent publication of mine (Cunningham, DeAngelo and Tripp 2023)
 
 \end{itemize}
 
@@ -175,6 +176,18 @@ Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma 
 \begin{center}
 \includegraphics[scale=0.25]{./lecture_includes/wayback1}
 \end{center}
+\end{frame}
+
+\begin{frame}{Differential Timing?}
+
+\begin{itemize}
+
+\item The Wayback Machine only lets you see a website at different points in time (more or less the universe though)
+\item But how are they going to take a website to support a difference-in-differences design?
+\item Look at what was on the front page 
+
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}
@@ -198,8 +211,8 @@ Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma 
 \begin{frame}{Timing Dates}
 
 \begin{itemize}
-\item They went through three years of daily screenshots on Wayback machine to find when a school appeared on the front page
-\item The first time Agnes Scott, or Covenant, appears on the front page, the authors mark that as the date when the school got Facebook
+\item They went through three years, day by day, of daily screenshots on Wayback machine to find when a school appeared on the front page
+\item The first time MIT or University of Mississippi appears on the front page, the authors mark that as the date when the school got Facebook
 \item But now they need information on mental health outcomes
 \item They find it with an old long running repeated cross section survey of college students
 \end{itemize}
@@ -209,7 +222,7 @@ Y_{icgt} = \alpha_g + \delta_t + \beta \times Facebook_{gt} + X_i \times \gamma 
 \begin{frame}{NCHA survey by ACHA}
 
 \begin{quote}
-Our second main data source consists of more than 430,000 responses to the NCHA survey, a survey administered to college students on a semi-annual basis by the American College Health Association (ACHA). The NCHA survey was developed in 1998 by a team of college health professionals with the purpose of obtaining information from college students about their mental and physical health. Specifically, the NCHA survey inquires about demographics, physical health, \textbf{mental health}, alcohol and drug use, sexual behaviors, and perceptions of these behaviors among one’s peers.
+''Our second main data source consists of more than 430,000 responses to the NCHA survey, a survey administered to college students on a semi-annual basis by the American College Health Association (ACHA). The NCHA survey was developed in 1998 by a team of college health professionals with the purpose of obtaining information from college students about their mental and physical health. Specifically, the NCHA survey inquires about demographics, physical health, \textbf{mental health}, alcohol and drug use, sexual behaviors, and perceptions of these behaviors among one’s peers.''
 \end{quote}
 
 \end{frame}
@@ -273,31 +286,31 @@ In order to protect the privacy of the institutions that participate in the NCHA
 \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Probably Caused the Acceptance}
 \begin{center}
 \includegraphics[scale=0.35]{./lecture_includes/facebook_3}
 \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Heterogeneity Analysis and ``Smell Test''}
 \begin{center}
 \includegraphics[scale=0.35]{./lecture_includes/facebook_4}
 \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Exposure Worsens}
 \begin{center}
 \includegraphics[scale=0.35]{./lecture_includes/facebook_5}
 \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Academic Effects}
 \begin{center}
 \includegraphics[scale=0.35]{./lecture_includes/facebook_6}
 \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Mechanisms}
 \begin{center}
 \includegraphics[scale=0.35]{./lecture_includes/facebook_7}
 \end{center}
@@ -316,7 +329,7 @@ In order to protect the privacy of the institutions that participate in the NCHA
 \end{frame}
 
 
-\subsection{ChatBot Rollout}
+\subsection{Generative AI and Worker Productivity}
 
 \begin{frame}{Working Paper on ChatBot}
 \begin{center}
@@ -369,10 +382,31 @@ In order to protect the privacy of the institutions that participate in the NCHA
 \end{frame}
 
 
-\begin{frame}{Resolutions of Customer Problems}
-\begin{center}
-\includegraphics[scale=0.25]{./lecture_includes/brynn3}
-\end{center}
+\begin{frame}{All the diff-in-diffs vs Sun and Abraham}
+\begin{multicols}{2}
+
+\begin{figure}
+\includegraphics[width=0.95\linewidth, keepaspectratio]{./lecture_includes/genai_did}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.22]{./lecture_includes/brynn3}
+\end{figure}
+
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Comments}
+
+\begin{itemize}
+
+\item They showed what is becoming standard ``all the diff in diffs''
+\item But then they stick with Sun and Abraham for all analysis (all the diff in diffs is an appendix figure)
+\item They also produce a table in the appendix of their simple ATTs for everything
+\item Contrast this with the Facebook paper which showed TWFE \emph{even though TWFE was biased}
+
+\end{itemize}
+
 \end{frame}
 
 
@@ -439,6 +473,138 @@ In order to protect the privacy of the institutions that participate in the NCHA
 \end{frame}
 
 
+
+\begin{frame}{Facebook vs AI Event Study}
+\begin{multicols}{2}
+
+\begin{figure}
+\includegraphics[width=0.95\linewidth, keepaspectratio]{./lecture_includes/facebook_3}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=0.95\linewidth, keepaspectratio]{./lecture_includes/genai_alldid}
+\end{figure}
+
+\end{multicols}
+
+\begin{itemize}
+\item Facebook TWFE estimate is biased downward; AI TWFE is unbiased
+\item Recall what TWFE needs:
+	\begin{enumerate}
+	\item SUTVA (no interference)
+	\item No Anticipation (baseline is untreated)
+	\item Parallel Trends
+	\item \textcolor{red}{Homogeneous Treatment Profiles}: All cohorts have the same dynamic treatment effects
+	\end{enumerate}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Sun and Abraham decomposition}
+
+\begin{eqnarray*}
+\mu_g &=& \underbrace{\sum_{l \in g} \sum_{e} w^g_{e,l} \big ( E[Y_{i,e+l} - Y^{\infty}_{i,0} | E_i = e] - E[Y^{\infty}_{i,e+l} - Y^{\infty}_{i,0}] \big )}_{\mathclap{\text{Targets}}} \\
+&+& \underbrace{\sum_{g' \neq g} \sum_{l \in g'} \sum_e w^g_{e,l} \big ( E[Y_{i,e+l} - Y^{\infty}_{i,0} | E_i=e] - E[Y^{\infty}_{i,e+l} - Y^{\infty}_{i,0}] \big )}_{\mathclap{\text{Contamination from other leads and lags}}} \\
+&+&  \underbrace{\sum_{l \in g^{excl}} \sum_{e} w^g_{e,l} \big ( E[Y_{i,e+l} - Y^{\infty}_{i,0} | E_i=e] - E[Y^{\infty}_{i,e+l} - Y^{\infty}_{i,0}] \big )}_{\mathclap{\text{Contamination from dropped periods}}} 
+\end{eqnarray*}
+
+Any relative time indicator (e.g., $g=-2$) is equal to the sum of three (weighted) types of difference-in-differences calculations
+\end{frame}
+
+
+\begin{frame}{Sun and Abraham decomposition}
+
+\begin{eqnarray*}
+\mu_g &=& \underbrace{\sum_{l \in g} \sum_e w^g_{e,l} CATT_{e,l}}_{\mathclap{\text{Desirable}}} \\
+&& + \underbrace{\sum_{g' \neq g, g' \in G} \sum_{l' \in g'} \sum_e w^g_{e,l'}  CATT_{e,l'}}_{\mathclap{\text{Bias from other specified bins}}} \\
+&&+ \underbrace{\sum_{l' \in g^{excl}} \sum_e w^g_{e,l'} CATT_{e,l'}}_{\mathclap{\text{Bias from dropped relative time indicators}}}
+\end{eqnarray*}
+
+Parallel trends turns each diff-in-diff into a cohort specific ATT (i.e., CATT)
+
+\end{frame}
+
+\begin{frame}{Sun and Abraham decomposition}
+
+\begin{eqnarray*}
+\mu_g &=& \underbrace{\sum_{l \in g} \sum_e w^g_{e,l} CATT_{e,l}}_{\mathclap{\text{Desirable}}} \\
+&& + \underbrace{\sum_{g' \neq g, g' \in G} \sum_{l' \in g'} \sum_e w^g_{e,l'}  CATT_{e,l'}}_{\mathclap{\text{Bias from other specified bins}}} \\
+&&+ \underbrace{\sum_{l' \in g^{excl}} \sum_e w^g_{e,l'} CATT_{e,l'}}_{\mathclap{\text{Bias from dropped relative time indicators}}}
+\end{eqnarray*}
+
+No Anticipation causes third row to be zero; causes all $g<0$ to be zero too
+
+\end{frame}
+
+\begin{frame}{Sun and Abraham decomposition}
+
+\begin{eqnarray*}
+\mu_g &=& \sum_{l \in g} w^g_l ATT_l \\
+&&+ \sum_{g' \neq g} \sum_{l' \in g'} w^g_{l'} ATT_{l'} \\
+&&+ \sum_{l' \in g^{excl}} w^g_{l'}ATT_{l'}
+\end{eqnarray*}
+
+Treatment effect homogeneity profiles cause all $CATT_{e,l}$ to be the same; therefore $ATT_{l}$ and not dependent on the timing
+
+\end{frame}
+
+\begin{frame}{What will cause second row to vanish?}
+
+\begin{eqnarray*}
+\mu_g &=& \sum_{l \in g} w^g_l ATT_l \\
+&&+ \sum_{g' \neq g} \sum_{l' \in g'} w^g_{l'} ATT_{l'} \\
+&&+ \sum_{l' \in g^{excl}} w^g_{l'}ATT_{l'}
+\end{eqnarray*}
+
+Second row weights sum to 0 (for each $l$ bin) meaning some are negative. But if they're all the same for each $l$ bin, then they cancel out. So question is why would they ever be the same?
+
+\end{frame}
+
+\begin{frame}{Two ways TWFE becomes unbiased}
+
+\begin{enumerate}
+\item Not a lot of heterogeneity.  Maybe in your application there isn't a lot of treatment effect heterogeneity and so trivially there are no unique $CATT_{e,l}$ 
+\item \textbf{Randomization of the treatment}. If the treatment rolled out to different groups \emph{randomly}, then it implies:
+	\begin{eqnarray*}
+	E[Y^0|D=1] &=&E[Y^0|D=0] = E[Y^0] \\
+	E[Y^1|D=1] &=&E[Y^1|D=0] = E[Y^1] \\
+	E[\delta | D=1] &=&E[\delta | D=0] = E[\delta]
+	\end{eqnarray*}
+\item Mean covariates and potential outcomes are distributed equally for all groups under randomization, in other words, which causes treatment effect homogeneity profile, and therefore TWFE is unbiased
+\item Diff-in-diff does not require this -- it's more than we need -- but if the rollout was random, then there are good reasons to use TWFE as it's more efficient since it uses more variation in the data
+
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Facebook vs Generative AI Rollout}
+
+\begin{itemize}
+\item We know from the paper that early adopters of Facebook had \emph{worse} baseline mental health; this could mean that the treatment effect profiles will be different from later adopters, hence why TWFE was biased
+\item But is the firm targeting the best or worst customer service agents and giving them chatbots earlier than later?
+\item That's the question -- is the selection into treatment based on the dynamic profiles? Then TWFE is likely biased, but that is not guaranteed to be the case
+\item And homogenous treatment effects also, regardless of the profiles, also addresses this
+
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{So why not then TWFE?}
+
+\begin{itemize}
+\item Why not just assume randomized roll outs? 
+\item You don't assume randomization -- it either was a literal, physical randomized roll out or it was not
+\item And assuming homogenous treatment profiles is to make a strong statement about some underlying production functions \emph{about which we know very little beforehand}
+\item Assuming constant treatment effects is a strong assumption and unnecessary
+\end{itemize}
+
+\end{frame}
+	
+
+
+
 \section{Concluding remarks}
 
 
@@ -465,6 +631,8 @@ In order to protect the privacy of the institutions that participate in the NCHA
 \item But it's not verifiable so it's a difficult assumption
 \item Parallel trends is not something a statistical model fixes -- it's something a control group fixes
 \item Some comparison groups will satisfy parallel trends, but some won't
+\item Neither of the following test the actual parallel trends assumption, but ultimately you have to take a stand on the trend and these are tests that you were justified
+
 
 \end{itemize}
 
@@ -472,35 +640,48 @@ In order to protect the privacy of the institutions that participate in the NCHA
 
 \begin{frame}{Evidence for parallel trends}
 
+
+
 \begin{enumerate}
 
-\item Event study graphics -- plot coefficients and confidence intervals to check if pre-trends are zero so that post-treatment coefficients are compelling evidence for causal effects
-\item Falsifications -- if possible, rule out competing hypotheses using falsifications (e.g., 65+ year olds can't be on Medicaid as they're already on Medicare)
+\item Event study graphics are placebos on the \emph{pre-treatment period}
+	\begin{itemize}
+	\item Plot coefficients and 95\% confidence intervals 
+	\item Check if pre-trends are zero 
+	\item Consider bounding if you think that's not likely (``honest diff-in-diff'' by Rambachan and Roth 2024)
+	\end{itemize}
+\item Falsifications are placebos on the \emph{post-treatment period}
+	\begin{itemize}
+	\item Assume some confounder and find a nearly identical group that should be affected by that confounder (but not eligible for the treatment)
+	\item Run your diff-in-diff on that ``nearly identical'' group 
+	\item Recall Miller, Johnson and Wherry using the 65 and older group as a falsification -- shouldn't they be affected by the confounder?
+	\end{itemize}
+
+
 
 \end{enumerate}
 
 \end{frame}
 
-\begin{frame}{Roadmap}
+\begin{frame}{Five Types of Evidence}
 
 \begin{enumerate}
 \item Show bite -- first order effects
 \item Main results -- What's your study about?
 \item Event study graphs -- This will be your main results and your evidence of parallel trends keeping in mind pre-trends and parallel trends are technically distinct
 \item Falsifications -- If you can find falsifications, use them
-\item Mechanisms -- can you find any explanation?
+\item Mechanisms -- can you find any explanation?  
 \end{enumerate}
 
 \end{frame}
 
-\begin{frame}{Synthetic control}
+\begin{frame}{Imputation methods}
 
 \begin{itemize}
 
-\item But what if parallel trends really isn't realistic -- what then?
-\item Then you may need to create your own control group that follows the same approximately trajectory as your treatment group pre-treatment
-\item A method by Abadie and Gardazebal (2003) and follow up papers worked out a method for this called synthetic control
-\item We will review that next
+\item But what if parallel trends really isn't realistic -- what then? At minimum, then diff-in-diff is not a solution
+\item We will review that next tomorrow when Kyle discusses imputation methods, including his own work
+\item Thank you!
 \end{itemize}
 
 \end{frame}
