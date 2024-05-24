@@ -9,7 +9,7 @@
 #show link: it => underline(stroke: 1.5pt + rgb("#e63274"), it)
 
 
-#figure(image(width: 65%, "banner.png"))
+#figure(image(width: 65%, "../img/banner.png"))
 
 = Greetings!
 
