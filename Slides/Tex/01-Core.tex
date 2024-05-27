@@ -244,7 +244,7 @@ Kyle Butts
 \item Dominant theory of disease spread was caused by "odors" or miasma or "humors"
 \item Semmelweis began showing signs of irritability, perhaps onset of dementia, became publicly abusive, was committed to a mental hospital and within two weeks died from wounds he received while in residence
 \item Despite the strength of evidence, difference-in-differences was rejected -- a theme we will see continue
-\item Let's look at an illustration using a table and another story
+\item I find diff-in-diff explains well using a simple table, so let's do that and tell another story
 
 \end{itemize}
 
@@ -325,8 +325,10 @@ Kyle Butts
 
 \begin{itemize}
 \item Causal questions require causal notation and we will use potential outcomes
-\item Potential outcomes notation is model-free explicit causal notation 
 \item Rooted in the experimental design tradition and linked to statisticians Ronald Fisher, Jerzy Neyman and Don Rubin
+\item Potential outcomes notation is model-free explicit causal notation
+\item Simple conceptually, somewhat subtle and can be confusing in practice, so we will practice it a few times as we go
+\item Our examples this week will use binary treatments, though there is new work on continuous diff-in-diff unpublished
 \end{itemize}
 
 \end{frame}
@@ -335,6 +337,7 @@ Kyle Butts
 
 
 \begin{frame}{Potential outcomes notation}
+	
 	
 	\begin{itemize}
 	\item Let the treatment be a binary variable: $$D_{i,t} =\begin{cases} 1 \text{ if in job training program $t$} \\ 0 \text{ if not in job training program at time $t$} \end{cases}$$where $i$ indexes an individual observation, such as a person, at a particular point in time
@@ -357,11 +360,12 @@ Kyle Butts
 \begin{frame}{Realized outcomes and treatment assignment}
 
 \begin{itemize}
-\item Treatment assignment mechanisms and treatment assignment are two very different things
+\item Treatment assignment \emph{mechanisms} (e.g., randomization) and the \emph{treatment assignment} (0 or 1) mean two very different things
 \item Treatment assignment is represented with the switching equation 
  $$Y_{it}=D_{it}Y_{it}^1 + (1-D_{it})Y_{it}^0$$
  \item Switching equations only show which potential outcome you're looking at, not why it and not another
- \item Switching equation is not a treatment assignment mechanism -- randomization is, rationality is, running variables are
+ \item Treatment assignment mechanisms assign treatment to units according to some rule, but that is not the switching equation
+ \item Examples of treatment mechanisms are randomization, rationality, running variables, propensity scores, instruments
 
 \end{itemize}
 \end{frame}
@@ -371,13 +375,14 @@ Kyle Butts
 
 
 \begin{frame}{Treatment effect definitions}
+	One main value of potential outcomes is the simplicity and clarity of \emph{defining} causal effects as simple comparisons
 
 
 	\begin{block}{Individual treatment effect}
 	    The individual treatment effect,  $\delta_i$, equals $Y_i^1-Y_i^0$
 	\end{block}
 	
-	Causal effects, or treatment effects, are simple comparisons between the two potential outcomes. 
+	Causal effects, or treatment effects, are simple contrasts between the two potential outcomes or states of the world. 
 	
 
 	
