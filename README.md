@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Mixtape-Sessions/Madrid-2024/main/Information/banner.png" alt="Mixtape Sessions Banner" width="100%"> 
+<img src="https://github.com/Mixtape-Sessions/Madrid-2024/blob/main/img/banner.png?raw=true" alt="Mixtape Sessions Banner" width="100%"> 
 
 # CodeChella Madrid 2024
 
