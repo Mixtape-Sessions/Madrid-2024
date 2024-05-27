@@ -1,0 +1,175 @@
+# Tennessee Valley Authority Empirical Application
+
+
+## Intro
+
+This exercise is going to work with data from Kline and Moretti (2014).
+This paper aims to analyze the impacts of the “Tennessee Valley
+Authority” (TVA) on local agriculture and manufacturing employment. The
+TVA was a huge federal spending program in the 1940s that aimed at
+electrification of the region, building hundreds of large dams (in
+Scott’s terms, a ton of ‘bite’).
+
+The region was centered in Tennessee and surrounding other southern
+states. The region had a large agriculture industry, but very little
+manufacturing. Electrification brought in a lot industry, moving the
+economy away from agriculture. We are going to test for this in the data
+using census data (recorded every 10 years).
+
+![Tennessee Valley Authority Dam](img/tva_map.jpeg)
+
+![Tennessee Valley Authority Map](img/tva_dam.jpeg)
+
+```{r}
+library(tidyverse)
+library(fixest)
+library(DRDID)
+library(did)
+
+options(readr.show_progress = FALSE, readr.show_col_types = FALSE)
+setFixest_etable(markdown = FALSE)
+```
+
+First, we will load our dataset:
+
+```{r}
+df <- read_csv("data/tva.csv")
+head(df)
+```
+
+    # A tibble: 6 × 18
+      county_code  year   tva treat  post ln_agriculture ln_manufacturing
+      <chr>       <dbl> <dbl> <dbl> <dbl>          <dbl>            <dbl>
+    1 01001        1920     0     0     0           8.49             6.41
+    2 01001        1930     0     0     0           8.64             6.36
+    3 01001        1940     0     0     0           8.39             6.66
+    4 01001        1950     0     0     1           7.78             7.14
+    5 01001        1960     0     0     1           7.12             7.26
+    6 01003        1920     0     0     0           8.35             7.10
+    # ℹ 11 more variables: agriculture_share_1920 <dbl>,
+    #   agriculture_share_1930 <dbl>, manufacturing_share_1920 <dbl>,
+    #   manufacturing_share_1930 <dbl>, ln_avg_farm_value_1920 <dbl>,
+    #   ln_avg_farm_value_1930 <dbl>, white_share_1920 <dbl>,
+    #   white_share_1930 <dbl>, white_share_1920_sq <dbl>,
+    #   white_share_1930_sq <dbl>, county_has_no_missing <lgl>
+
+## Question 1
+
+We will perform the basic 2x2 DID using just the years 1940 and 1960. We
+will use as outcomes `ln_agriculture` and `ln_manufacturing`.
+
+First, for `ln_agriculture`, we will manually calculate the means and
+form the difference-in-differences.
+
+```{r}
+
+```
+
+Second, run the “classic” version using an indicator for treatment,
+`tva`, and indicator for being the post-period, `post`, and the product
+of the two. I recommend the package `fixest` for regression analysis.
+I’ll be using it in the solutions.
+
+```{r}
+
+```
+
+Second, we will see in the 2x2 DID case, using county and time fixed
+effects is equivalent:
+
+```{r}
+
+```
+
+## Question 2
+
+Moretti and Kline were nervous that the parallel trends assumption is a
+bit of a strong assumption in the context. Why might that be in the
+context of the Tennessee Valley Authority?
+
+Answer: The TVA was built in the Tenneessee area precisely because the
+area was not developing a strong manufacturing base. It is unlikely in
+the absence of treatment that counties in the TVA area were going to
+grow in manufacturing the same as outside counties
+
+Let’s run a placebo analysis to test for this using 1920 as the
+pre-treatment period and 1930 as the post-treatment period. What does
+this tell us about the plausability of a parallel trends type
+assumption?
+
+```{r}
+
+```
+
+## Question 3
+
+Let’s put this analysis together and run an event-study regression using
+the full dataset
+
+To do this, create a set of dummy variables that interact year with
+treatment status. Estimate the TWFE model with these dummy variables.
+
+```{r}
+
+```
+
+
+## Question 4
+
+We see some evidence of pre-trends for `ln_manufacturing` which makes us
+concerned about the plausability of parallel counterfactual trends in
+the post-period. Let’s show this visually by extending a linear
+regression through the pre-period estimates.
+
+```{r}
+
+```
+
+
+This exercise, assumes that changes in outcomes in the pre-period will
+extend linearly into the future. However, this is a strong assumption;
+instead we will use Jon Roth and Ashesh Rambachan’s work. First, we will
+calculate the “the largest violations of parallel trends in the
+pre-treatment period”. We measure a violation of parallel trends as the
+change in pre-trend estimates $\hat{\delta}_t - \hat{\delta}_{t-1}$. In
+our case, we only have two pre-period estimates so it’s the max:
+
+```{r}
+
+```
+
+Now we will use the `HonestDiD` package to assess robustness to
+violations of parallel trends. The function
+`HonestDiD::createSensitivityResults_relativeMagnitudes` will calculate
+the largest violation of parallel trends and then intuitively gauge “if
+we have violations of similar magnitude, could our results go away”. We
+can control the “magnitude” of violations by a value of $\bar{M}$ with a
+value of 1 being equal to the largest violation and 0 being no bias. The
+code is kind of complicated, so I include it here:
+
+```{r}
+library(HonestDiD)
+
+est = coef(est_manuf)
+sigma = vcov(est_manuf)
+
+delta_rm_results <- HonestDiD::createSensitivityResults_relativeMagnitudes(
+  betahat = est, # coefficients
+  sigma = sigma, # covariance matrix
+  numPrePeriods = 2, 
+  numPostPeriods = 2, 
+  # values of Mbar; value of 1 is "worst-case bias"
+  Mbarvec = seq(0.25, 1.5, by = 0.25) 
+)
+
+# Get the original estimate
+originalResults <- HonestDiD::constructOriginalCS(
+  betahat = est,
+  sigma = sigma,
+  numPrePeriods = 2,
+  numPostPeriods = 2
+)
+
+# Plot
+HonestDiD::createSensitivityPlot_relativeMagnitudes(delta_rm_results, originalResults)
+```
