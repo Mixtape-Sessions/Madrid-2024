@@ -404,7 +404,7 @@ This is the Heckman, et al. (1997) approach where the potential outcome evolutio
 \bigskip
 
 \begin{eqnarray*}
-\widehat{\delta}^{OR} = \overline{Y}_{1,1} - \bigg [ \overline{Y}_{1,0} + \frac{1}{n^T} \sum_{i|D_i=1} ( \widehat{\mu}_{0,1}(X_i) - \widehat{\mu}_{0,0}(X_i)) \bigg ]
+\widehat{\delta}^{OR} =\bigg [  \overline{Y}_{1,1} - \overline{Y}_{1,0}\bigg ] - \bigg [  \frac{1}{n^T} \sum_{i|D_i=1} ( \widehat{\mu}_{0,1}(X_i) - \widehat{\mu}_{0,0}(X_i)) \bigg ]
 \end{eqnarray*}
 
 where $\overline{Y}$ is the sample average of $Y$ among units in the treatment group at time $t$ and $\widehat{\mu}(X)$ is an estimator of the true, but unknown, $m_{d,t}(X)$ which is by definition equal to $E[Y_t|D=d,X=x]$.
