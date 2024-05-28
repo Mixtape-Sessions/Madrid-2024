@@ -9,78 +9,127 @@ clear
 capture log close
 set seed 20200403
 
-* 1,000 workers (25 per state), 40 states, 4 groups (250 per group), 30 years
-* First create the states
-set obs 40
-gen state = _n
+********************************************************************************
+* Define dgp
+********************************************************************************
+cap program drop dgp
+program define dgp
 
-* Generate 1000 workers. These are in each state. So 25 per state.
-expand 25
-bysort state: gen worker=runiform(0,5)
-label variable worker "Unique worker fixed effect per state"
-egen id = group(state worker)
+	* 1,000 workers (25 per state), 40 states, 4 groups (250 per group), 30 years
+	* First create the states
+	set obs 40
+	gen state = _n
 
-* Treatment group is upper half
-gen treat = 0
-replace treat = 1 if id >= 500
+	* Generate 1000 workers. These are in each state. So 25 per state.
+	expand 25
+	bysort state: gen worker=runiform(0,5)
+	label variable worker "Unique worker fixed effect per state"
+	egen id = group(state worker)
 
-* Generate Covariates (Baseline values)
-gen age = rnormal(35, 10)
-gen gpa = rnormal(2.0, 0.5)
+	* Generate Covariates (Baseline values)
+	gen age = rnormal(35, 10)
+	gen gpa = rnormal(2.0, 0.5)
 
-* Center Covariates (Baseline)
-su age
-replace age = age - r(mean)
-su gpa
-replace gpa = gpa - r(mean)
+	* Center Covariates (Baseline)
+	sum age
+	replace age = age - r(mean)
+	sum gpa
+	replace gpa = gpa - r(mean)
 
-* Generate Polynomial and Interaction Terms (Baseline)
-gen age_sq = age^2
-gen gpa_sq = gpa^2
+	* Generate Polynomial and Interaction Terms (Baseline)
+	gen age_sq = age^2
+	gen gpa_sq = gpa^2
+	gen interaction = age * gpa
+	
+	* Treatment probability increases with age and decrease with gpa
+	gen propensity = 0.3 + 0.3 * (age > 0) + 0.2 * (gpa > 0)
+	gen treat = runiform() < propensity
 
-* Generate the years
-expand 2
-sort state
-bysort state worker: gen year = _n
-gen n = year
+	* Generate the years
+	expand 2
+	sort state
+	bysort state worker: gen year = _n
+	gen n = year
 
-replace year = 1990 if year == 1
-replace year = 1991 if year == 2
+	replace year = 1990 if year == 1
+	replace year = 1991 if year == 2
+	
+	* Post-treatment
+	gen post = 0  
+	replace post = 1 if year == 1991
 
-* Post-treatment
-gen post = 0  
-replace post = 1 if year == 1991
 
-* Generate Potential Outcomes with Baseline and Year Difference
-gen		y0 = 40000 + 100 * age + 1000 * gpa + rnormal(0,1500) if year==1990 & treat==1
-replace	y0 = 40000 + 200 * age + 2000 * gpa + rnormal(0,1500) if year==1991 & treat==1
+	* Generate Baseline Earnings with control group making 10,000 more at baseline
+	gen 	baseline = 40000 + 1000 * age + 500 * gpa if treat==1
+	replace baseline = 50000 + 1000 * age + 500 * gpa if treat==0
+	
+	* Generate Potential Outcomes with Baseline and Year Difference
+	gen      e = rnormal(0, 1500)
+	gen 	y0 = baseline + 1000 + 100 * age + 1000 * gpa + e if year==1990
+	replace y0 = baseline + 1000 + 200 * age + 2000 * gpa + e if year==1991
+	* ^ NOTE: 
+	* The change in coefficients on age and gpa generate trends in outcomes.
+	* If two units have the same age and same gpa, then they will have the same change in y0.
 
-replace	y0 = 50000 + 100 * age + 1000 * gpa + -1 + rnormal(0,1500) if year==1990 & treat==0
-replace	y0 = 50000 + 200 * age + 2000 * gpa + -2 + rnormal(0,1500) if year==1991 & treat==0
-replace y0=0 if y0<0
+	* Covariate-based treatment effect heterogeneity
+	gen 	y1 = y0
+	replace y1 = y0 + 1000 + 100 * age + 500 * gpa if year == 1991
 
-* Covariate heterogeneity
-gen 	y1 = y0 
-replace y1 = y0 + 1000 + 1000 * age + 4000 * gpa if year == 1991
-replace y1=0 if y1<0
+	* Treatment effect
+	gen delta = y1 - y0
+	label var delta "Treatment effect for unit i (unobservable in the real world)"
 
-* Summarizing individual treatment effect, ATE and ATT
-gen delta = y1 - y0
+	
+	quietly sum delta if post == 1
+	gen ate = `r(mean)'
+	quietly sum delta if treat==1 & post==1
+	gen att = `r(mean)'
 
-sum delta
-gen ate = `r(mean)'
-sum delta if treat==1 & post==1
-gen att = `r(mean)'
+	* Generate observed outcome based on treatment assignment
+	gen 	earnings = y0
+	replace earnings = y1 if post == 1 & treat == 1
+end
 
-* Generate observed outcome based on treatment assignment
-gen 	earnings = y0
-replace earnings = y1 if post == 1 & treat == 1
 
-* Regression
-regress earnings age gpa  post##treat, robust
 
-* Doubly-robust DID
-drdid earnings age gpa  if year == 1990 | year == 1991, time(year) ivar(id) tr(treat) all
+********************************************************************************
+* Generate a sample
+********************************************************************************
+clear
+quietly dgp
+sum att ate
+
+* Regression breaks
+regress earnings age gpa age_sq gpa_sq post##treat, robust
+
+* DRDID works
+drdid earnings age gpa age_sq gpa_sq, time(year) ivar(id) tr(treat) all
+
+
+
+
+********************************************************************************
+* Monte-carlo simulation
+********************************************************************************
+cap program drop sim
+program define sim, rclass
+	clear
+	quietly dgp
+	
+	* DRDID
+	quietly drdid earnings age gpa age_sq gpa_sq, time(year) ivar(id) tr(treat) all
+	
+	return scalar dripw = e(b)[1,1]
+	return scalar regadjust = e(b)[1,3]
+	return scalar ipw = e(b)[1,4]
+	
+	* OLS
+	quietly regress earnings i.post i.treat i.post#i.treat age gpa age_sq gpa_sq, robust
+	return scalar ols = _b[1.post#1.treat]
+end
+
+simulate dripw = r(dripw) regadjust = r(regadjust) ipw = r(ipw) ols = r(ols), reps(50): sim
+sum
 
 
 
