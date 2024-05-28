@@ -124,7 +124,7 @@ program define sim, rclass
 	return scalar ipw = e(b)[1,4]
 	
 	* OLS
-	quietly regress earnings i.post i.treat i.post#i.treat age gpa age_sq gpa_sq, robust
+	quietly regress earnings i.post i.treat i.post#i.treat i.post#c.age i.post#c.gpa i.post#c.age_sq i.post#c.gpa_sq, robust
 	return scalar ols = _b[1.post#1.treat]
 end
 
