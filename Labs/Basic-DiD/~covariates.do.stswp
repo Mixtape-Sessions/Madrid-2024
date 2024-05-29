@@ -131,5 +131,12 @@ end
 simulate dripw = r(dripw) regadjust = r(regadjust) ipw = r(ipw) ols = r(ols), reps(50): sim
 sum
 
+kdensity ols,  xtitle(Estimated ATT) xline(1262, lwidth(medthick) lpattern(dash) lcolor(blue) extend) xlabel(1262 1910) xline(1910, lwidth(med) lpattern(solid) lcolor(red) extend) subtitle(Estimated with OLS) ytitle("") title("Density of ATT estimates from OLS") note("")
+
+kdensity dripw,  xtitle(Estimated ATT) xline(1262, lwidth(medthick) lpattern(dash) lcolor(blue) extend) xlabel(1262 1279.5) xline(1279.5, lwidth(med) lpattern(solid) lcolor(red) extend) subtitle(Estimated with OLS) ytitle("") title("Density of ATT estimates from Double Robust IPW") note("")
+
+kdensity regadjust,  xtitle(Estimated ATT) xline(1262, lwidth(medthick) lpattern(dash) lcolor(blue) extend) xlabel(1262 1270.46) xline(1270.46, lwidth(med) lpattern(solid) lcolor(red) extend) subtitle(Estimated with OLS) ytitle("") title("Density of ATT estimates from Outcome Regression") note("")
+
+kdensity ipw,  xtitle(Estimated ATT) xline(1262, lwidth(medthick) lpattern(dash) lcolor(blue) extend) xlabel(1262 1246) xline(1246, lwidth(med) lpattern(solid) lcolor(red) extend) subtitle(Estimated with OLS) ytitle("") title("Density of ATT estimates from IPW") note("")
 
 

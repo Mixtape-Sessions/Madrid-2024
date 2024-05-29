@@ -417,7 +417,7 @@ where $\overline{Y}$ is the sample average of $Y$ among units in the treatment g
 \begin{frame}{Outcome regression}
 
 \begin{eqnarray*}
-\widehat{\delta}^{OR} = \overline{Y}_{1,1} - \bigg [ \overline{Y}_{1,0} + \frac{1}{n^T} \sum_{i|D_i=1} ( \widehat{\mu}_{0,1}(X_i) - \widehat{\mu}_{0,0}(X_i)) \bigg ]
+\widehat{\delta}^{OR} =\bigg [  \overline{Y}_{1,1} - \overline{Y}_{1,0}\bigg ] - \bigg [  \frac{1}{n^T} \sum_{i|D_i=1} ( \widehat{\mu}_{0,1}(X_i) - \widehat{\mu}_{0,0}(X_i)) \bigg ]
 \end{eqnarray*}
 
 \begin{enumerate}
