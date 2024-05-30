@@ -24,6 +24,8 @@ sub_exp <- function(df, e, kappa_pre = 3, kappa_post = 2) {
   treat <- (df$adopt_year == e)
   post <- (df$year >= df$adopt_year)
 
+  # MORE FILTERING HERE (e.g. bordering counties, same census region, etc.)
+
   case_when(
     !balance_event_time ~ 0L,
     clean_control       ~ 1L, 

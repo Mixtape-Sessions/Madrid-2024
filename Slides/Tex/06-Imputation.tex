@@ -4,7 +4,7 @@
 \usepackage{verbatim}
 \usepackage{bm}
 \begin{document}
-% \imageframe{./lecture_includes/slide_banner.pdf}
+\imageframe{./lecture_includes/slide_banner.pdf}
 
 \section{Imputation in 2x2}
 
@@ -139,7 +139,7 @@
   Units can vary in what year they get treated, denoted by $g$.  
 
   \bigskip
-  Researchers care about the average treatment effect on the treated, $\tau = \expec{\tau_{it}}{d_{it} = 1}$ or perhaps some different average of $\tau_{it}$. 
+  Researchers care about the overall ATT, $\expec{\tau_{it}}{d_{it} = 1}$, or some different average of $\tau_{it}$. 
 \end{frame}
 
 \begin{frame}{TWFE Model}{Treatment effect heterogeneity}
@@ -168,9 +168,10 @@
     y_{it} = \mu_i + \eta_t + \tau d_{it} + \underbrace{u_{it}}_{ \varepsilon_{it} + (\tau_{it} - \tau) d_{it} }
   $$
 
+  \medskip
   The error term now contains the treatment effect heterogeneity. 
   \begin{itemize}
-    \item If there is any systematic heterogeneity like we described before, then the covariates (fixed-effects) are correlated with the error term and OLS estimates are biased.
+    \item If there is any systematic heterogeneity like we described before, then the covariates (fixed-effects) are correlated with the error term and OLS estimates suffer from omitted variables bias.
   \end{itemize}
 \end{frame}
 
@@ -181,16 +182,18 @@
   y_{it} - \mu_i - \eta_t = \tau_{it} d_{it} + \varepsilon_{it}
   $$
 
+  \pause
   \bigskip
   If we regress $y_{it} - \mu_i - \eta_t$ on the dummy variable $d_{it}$, OLS algebra tells us that $\hat{\tau}$ will estimate a simple average of $\tau_{it}$ (plus noise):
 
   $$
-    \hat{\tau} = \frac{1}{\sum_{(i,t)} d_{it}} \sum_{(i,t)} \left( \tau_{it} d_{it} + \varepsilon_{it} \right) = \text{ATT} + \text{noise}
+    \hat{\tau} = \frac{1}{N_{post}} \sum_{(i,t)} \left( \tau_{it} d_{it} + \varepsilon_{it} \right) = \text{ATT} + \text{noise},
   $$
+  where $N_{post}$ is the number of post-treatment observations
 
   \pause
   \bigskip
-  Similarly, if we had a set of \emph{mutually-exclusive} event-study variables, $d_{it}^\ell$, we would get averages of $\tau_{it}$ for $(i,t)$ with $g_i - t = \ell$. 
+  Similarly, if we had a set of \emph{mutually-exclusive} event-study dummy variables, $d_{it}^\ell$, we would get averages of $\tau_{it}$ for $(i,t)$ with $g_i - t = \ell$. 
 \end{frame}
 
 \begin{frame}{Too bad we don't know $\mu$ and $\eta$}
@@ -210,12 +213,19 @@
   
   \bigskip
   Under our model, the left-hand side equals:
-  $$
-    y_{it} - \hat{\mu}_i - \hat{\eta}_t = \tau_{it} d_{it} + (\mu_i - \hat{\mu}_i) + (\eta_t - \hat{\eta}_t) + \varepsilon_{it}.
-  $$
+  \only<1>{
+    $$
+      y_{it} - \hat{\mu}_i - \hat{\eta}_t = \tau_{it} d_{it} + (\mu_i - \hat{\mu}_i) + (\eta_t - \hat{\eta}_t) + \varepsilon_{it}.
+    $$
+  }\only<2>{
+    $$
+      y_{it} - \hat{\mu}_i - \hat{\eta}_t = \tau_{it} d_{it} + \underbrace{(\mu_i - \hat{\mu}_i)}_{\text{mean } 0} + \underbrace{(\eta_t - \hat{\eta}_t)}_{\text{mean } 0} + \varepsilon_{it}.
+    $$
+  }
   
-  Therefore we have a noisy estimate for $\tau_{it}$, so what's the problem? 
-
+  \pause
+  We have a noisy estimate for $\tau_{it}$, but we are averaging over observations. So what's the problem? 
+  
   \bigskip
   \pause
   All of the modern diff-in-diff problems (yes all of them) show different ways to interpret the same problem: $\tilde{d}_{it}$.
@@ -230,7 +240,7 @@
   $$
 
   \bigskip
-  Okay, so why don't you just regress $y_{it} - \hat{\mu}_i - \hat{\eta}_t$ on $d_{it}$? Great intuition!
+  Okay, so why don't you just regress $y_{it} - \hat{\mu}_i - \hat{\eta}_t$ on $d_{it}$? \pause Great intuition!
 \end{frame}
 
 \begin{frame}{Two-stage difference-in-differences}
@@ -239,6 +249,7 @@
   \bigskip
   \textbf{Stage 1:}
   Estimate $\mu_i$ and $\eta_t$ using untreated/not-yet-treated observations ($d_{it} = 0$). 
+  \pause
   \begin{itemize}
     \item Don't include $d_{it} = 1$ since the treatment effects will bias estimates of the fixed effects.
   \end{itemize}
@@ -649,6 +660,22 @@
     \begin{itemize}
       \item That is, the treated unit can not have an extreme value in any of the $\lambda_{i,r}$ (e.g. huge manufacturing share)
     \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Inference in Synthetic Control}
+  Inference in the classical synthetic control setting is really difficult
+  \begin{itemize}
+    \item Only one treated unit; you're not averaging over units so the estimate is subject to random shocks
+  \end{itemize}
+
+  \pause
+  \bigskip
+  Two forms of randomization inference are typically used:
+  \begin{itemize}
+    \item Randomly shuffle treatment to control units and reestimate synthetic control; want the treated unit to look more extreme than the placebo estimates. The so-called `spaghetti plot'
+    
+    \item Randomly shuffle time-periods around for treated unit and reestimate synthetic control
   \end{itemize}
 \end{frame}
 
